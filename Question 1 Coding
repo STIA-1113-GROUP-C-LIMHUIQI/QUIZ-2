@@ -1,0 +1,60 @@
+package quiz;
+
+import java.util.Scanner;
+
+public class Question1 {
+	
+	private static Scanner scan;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		double salary;
+		int year;
+		double bonus; 
+		double amount;
+		int monthS[];
+		
+		scan = new Scanner(System.in);
+		
+		System.out.println("Please enter your salary: RM ");
+		salary = scan.nextDouble();
+		System.out.println("Please enter your year of service:  ");
+		year = scan.nextInt();
+		
+		if (year>5)
+			bonus= salary*0.05;
+		else
+			bonus = 0;
+		
+		amount = salary + bonus;
+		
+		System.out.println("The bonus is: RM " + bonus);
+		System.out.println("The total amount of salary is: RM " +salary);
+		System.out.println();
+		
+		System.out.println("Enter your monthly salary: ");
+		monthS [] = scan.nextInt();
+		
+		for(int i=1; i< monthS.length; i++)
+        {
+			int biggest = 0;
+			int smallest = 0;
+                if(monthS[i] > biggest)
+                        biggest = monthS[i];
+                else if (monthS[i] < smallest)
+                        smallest = monthS[i];
+               
+        }
+       
+        System.out.println("Largest Number is : " + biggest);
+        System.out.println("Smallest Number is : " + smallest);
+		
+		
+		
+		
+
+	}
+
+}
