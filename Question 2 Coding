@@ -12,11 +12,11 @@ public class printArrayInStars {
 		int NUM_ITEMS;
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Please enter the number of items: ");
+		System.out.print("Enter the number of items: ");
         NUM_ITEMS = scan.nextInt();
         
         int numValue[] = new int[NUM_ITEMS];
-        System.out.print("Please enter the value of elements:");
+        System.out.print("Enter the value of all items (separated by space):");
         for(int i = 0; i < NUM_ITEMS; i++)
         {
             numValue[i] = scan.nextInt();
@@ -28,8 +28,9 @@ public class printArrayInStars {
 
             for (int star = 1; star <= number; star++) {
                 System.out.print("*");
-
+         
             }
+            System.out.print("(" + numValue[j] + ")");
            System.out.println("");
     }
        
