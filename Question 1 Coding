@@ -15,6 +15,9 @@ public class Question1 {
 		double bonus; 
 		double amount;
 		int monthS[];
+		int monthSalary;
+		int smallest = monthS[0];
+        int biggest = monthS[0];
 		
 		scan = new Scanner(System.in);
 		
@@ -35,17 +38,16 @@ public class Question1 {
 		System.out.println();
 		
 		System.out.println("Enter your monthly salary: ");
-		monthS [] = scan.nextInt();
+		monthS[monthSalary] = scan.nextInt();
 		
 		for(int i=1; i< monthS.length; i++)
         {
-			int biggest = 0;
-			int smallest = 0;
+		
                 if(monthS[i] > biggest)
                         biggest = monthS[i];
                 else if (monthS[i] < smallest)
                         smallest = monthS[i];
-               
+   
         }
        
         System.out.println("Largest Number is : " + biggest);
